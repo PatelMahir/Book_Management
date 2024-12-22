@@ -61,7 +61,7 @@ static void ConfigurePipeline(WebApplication app, IWebHostEnvironment env)
     }
 
     // Enable CORS
-    app.UseCors("AllowAngularApp");
+    app.UseCors("Book_Management_Frontend");
 
     // Ensure database is created and migrated
     using (var scope = app.Services.CreateScope())
