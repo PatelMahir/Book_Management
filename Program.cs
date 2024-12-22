@@ -35,7 +35,7 @@ static void ConfigureServices(IServiceCollection services, IConfiguration config
     // CORS Configuration
     services.AddCors(options =>
     {
-        options.AddPolicy("AllowAngularApp",
+        options.AddPolicy("Book_Management_Frontend",
             builder => builder
                 .WithOrigins("http://localhost:4200")
                 .AllowAnyMethod()
